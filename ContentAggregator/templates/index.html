@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome to Puff's Aggregator {% endblock %}</h1>
+    {% for i in feed %}
+    	<a href="{{ i[2] }}" target="_blank" rel="noopener noreferrer">
+			<div class="card">
+	  			<div class="container">     	
+			        <h2><b>{{ i[0] }}</b></h2>
+
+			        {{ i[1] }}
+
+			        <hr>
+
+			        <span class="badge badge-primary">{{ i[3] }}</span>
+			    </div>
+			</div>
+		</a>
+        <hr>
+    {% endfor %}
+{% endblock %}

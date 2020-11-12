@@ -1,0 +1,2 @@
+http://rss.cnn.com/rss/cnn_latest.rss
+http://rssfeeds.usatoday.com/UsatodaycomNation-TopStories
